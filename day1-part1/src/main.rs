@@ -1,4 +1,3 @@
-use std::env;
 use std::error::Error;
 use std::fs;
 
@@ -16,7 +15,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         list1.push(left.parse::<i32>()?);
         list2.push(right.parse::<i32>()?);
     }
-    
+
     // 3. sort the lists
     list1.sort();
     list2.sort();
